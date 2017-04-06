@@ -99,7 +99,8 @@ function startGame() {
 function toggleFortification() {
   var randoNumbo = Math.floor((Math.random() * (gridAmount - 2)) + 1)
   if ($allTiles.eq(randoNumbo).attr('class') != 'fortification' &&
-  $allTiles.eq(randoNumbo).attr('class') != 'defector') {
+  $allTiles.eq(randoNumbo).attr('class') != 'defector')
+  {
   $allTiles.eq(randoNumbo).removeClass('neutral')
   $allTiles.eq(randoNumbo).toggleClass('fortification')
   $allTiles.eq(randoNumbo).text('10')
@@ -110,7 +111,8 @@ function toggleSuperFortification() {
   var randoNumbo = Math.floor((Math.random() * (gridAmount - 2)) + 1)
   if ($allTiles.eq(randoNumbo).attr('class') != 'fortification' &&
   $allTiles.eq(randoNumbo).attr('class') != 'defector' &&
-  $allTiles.eq(randoNumbo).attr('class') != 'superFort') {
+  $allTiles.eq(randoNumbo).attr('class') != 'superFort')
+  {
   $allTiles.eq(randoNumbo).removeClass('neutral')
   $allTiles.eq(randoNumbo).toggleClass('superFort')
   $allTiles.eq(randoNumbo).text('20')
@@ -120,7 +122,8 @@ function toggleSuperFortification() {
 function toggleDefectors() {
   var randoNumbo = Math.floor((Math.random() * (gridAmount - 2)) + 1)
   if ($allTiles.eq(randoNumbo).attr('class') != 'fortification' &&
-  $allTiles.eq(randoNumbo).attr('class') != 'defector') {
+  $allTiles.eq(randoNumbo).attr('class') != 'defector')
+  {
   $allTiles.eq(randoNumbo).removeClass('neutral')
   $allTiles.eq(randoNumbo).toggleClass('defector')
   $allTiles.eq(randoNumbo).text('-10')
@@ -132,7 +135,8 @@ function toggleSuperDefectors() {
   if ($allTiles.eq(randoNumbo).attr('class') != 'fortification' &&
   $allTiles.eq(randoNumbo).attr('class') != 'defector' &&
   $allTiles.eq(randoNumbo).attr('class') != 'superFort' &&
-  $allTiles.eq(randoNumbo).attr('class') != 'superDef') {
+  $allTiles.eq(randoNumbo).attr('class') != 'superDef')
+  {
   $allTiles.eq(randoNumbo).removeClass('neutral')
   $allTiles.eq(randoNumbo).toggleClass('superDef')
   $allTiles.eq(randoNumbo).text('-20')
@@ -309,17 +313,19 @@ function displayWinner() {
     $player1Score.eq(0).text('Player 1 Wins!')
     turnClicksOff()
   }
-  if (players.playerTwo.tileAmt > players.playerOne.score) {
+  if (players.playerTwo.score > players.playerOne.score) {
     $player1Score.css('opacity', '0.3')
     $player2Score.css('opacity', '1')
     $player2Score.eq(0).text('Player 2 Wins!')
+    console.log('1')
     turnClicksOff()
   }
-  if (players.playerTwo.tileAmt > players.playerOne.score) {
+  if (players.playerTwo.score > players.playerOne.score) {
     $player1Score.css('opacity', '1')
     $player2Score.css('opacity', '1')
     $player1Score.eq(0).text('Player 1 Wins!')
     $player2Score.eq(0).text('Player 2 Wins!')
+    console.log('1')
     turnClicksOff()
   }
 };
