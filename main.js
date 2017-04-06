@@ -311,21 +311,22 @@ function displayWinner() {
     $player2Score.css('opacity', '0.3')
     $player1Score.css('opacity', '1')
     $player1Score.eq(0).text('Player 1 Wins!')
+    console.log('1 wins with: ' + players.playerOne.score)
     turnClicksOff()
   }
-  if (players.playerTwo.score > players.playerOne.score) {
+  if (players.playerOne.score < players.playerTwo.score) {
     $player1Score.css('opacity', '0.3')
     $player2Score.css('opacity', '1')
     $player2Score.eq(0).text('Player 2 Wins!')
-    console.log('1')
+    console.log('2 wins with: ' + players.playerTwo.score)
     turnClicksOff()
   }
-  if (players.playerTwo.score > players.playerOne.score) {
+  if (players.playerTwo.score == players.playerOne.score) {
     $player1Score.css('opacity', '1')
     $player2Score.css('opacity', '1')
-    $player1Score.eq(0).text('Player 1 Wins!')
-    $player2Score.eq(0).text('Player 2 Wins!')
-    console.log('1')
+    $player1Score.eq(0).text('Player 1 Ties!')
+    $player2Score.eq(0).text('Player 2 Ties!')
+    console.log('both win with same same' )
     turnClicksOff()
   }
 };
