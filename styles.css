@@ -1,0 +1,91 @@
+h1 {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+	border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.93);
+  padding: 10px;
+  text-align: center;
+  float: center;
+  opacity: .7
+}
+
+p {
+  color: white;
+  display: inline;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  font-family: 'Press Start 2P', cursive;
+}
+
+.playerColor {
+  height: 40px;
+  width: 40px;
+  display: inline;
+}
+
+.scoreBox {
+  float: left;
+}
+
+.container {
+  width: 820px;
+  margin: auto;
+}
+
+.neutral {
+  height: 100px; width: 100px;
+  padding: 2px;
+  background-image: url('VirusCells_neutralCell2.png');
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  color: white;
+  margin: 2px;
+}
+
+.blue {
+  height: 100px; width: 100px;
+  background-image: url('blue.png');
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  color: white;
+  margin: 2px;
+  padding: 2px;
+}
+
+.red {
+  height: 100px; width: 100px;
+  background-image: url('red.png');
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  color: white;
+  margin: 2px;
+  padding: 2px;
+}
+
+.fortification, .defector, .superFort, .superDef {
+  height: 100px; width: 100px;
+  background-image: url('VirusCells_neutralCell2.png');
+  display: inline-block;
+  background-size: cover;
+  float: left;
+  color: orange;
+  margin: 2px;
+  padding: 2px;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  height: 20px;
+  border-radius: 5px;
+  background-color: white;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: 5px;
+
+}
