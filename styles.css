@@ -35,17 +35,6 @@ body {
   margin: auto;
 }
 
-.neutral {
-  height: 100px; width: 100px;
-  padding: 2px;
-  background-image: url('VirusCells_neutralCell2.png');
-  background-size: cover;
-  display: inline-block;
-  float: left;
-  color: white;
-  margin: 2px;
-}
-
 .blue {
   height: 100px; width: 100px;
   background-image: url('blue.png');
@@ -68,13 +57,13 @@ body {
   padding: 2px;
 }
 
-.fortification, .defector, .superFort, .superDef {
+.neutral, .fortification, .defector, .superFort, .superDef {
   height: 100px; width: 100px;
-  background-image: url('VirusCells_neutralCell2.png');
+  background-image: url('VirusCells_neutralCell2_trans.png');
   display: inline-block;
   background-size: cover;
   float: left;
-  color: orange;
+  color: white;
   margin: 2px;
   padding: 2px;
 }
