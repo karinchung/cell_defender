@@ -30,8 +30,6 @@ var $openPopup = $('.my_popup_open')
 
 $scoreDisplay.prepend($openPopup)
 $scoreDisplay.prepend($startButton);
-// $scoreDisplay.prepend($resetButton);
-// $resetButton.on('click', resetGame);
 $startButton.on('click', startGame);
 
 // Creates all the tiles
@@ -88,13 +86,6 @@ function startGame() {
   displayPlayerTurn()
   addTileScore()
 };
-
-// function resetGame() {
-//   for (var i = 0; i < gridAmount; i++) {
-//     $allTiles.eq(i).attr('class') = 'neutral'
-//   }
-//   startGame()
-// }
 
 function toggleFortification() {
   var randoNumbo = Math.floor((Math.random() * (gridAmount - 2)) + 1)
@@ -355,5 +346,3 @@ function displayPlayerTurn() {
     $player2Score.css('opacity', '1')
   }
 };
-
-// breakpoint is about 1110px (fix for tablet & (mobile?))
